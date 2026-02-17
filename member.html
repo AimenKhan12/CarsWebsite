@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Royal Cars</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav-bar {
+            margin: 0;
+            padding: 15px 30px;
+            width: 100%;
+            position: relative;
+            left: 0;
+            right: 0;
+            background: var(--dark, #343a40);
+            color: #ffffff;
+        }
+
+        .register-container {
+            margin: 50px auto;
+            max-width: 600px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .register-container h2 {
+                margin-bottom: 20px;
+                color: #343a40;
+                text-align: center;
+            }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004085;
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <div class="logo-container">
+                        <img src="img/logoo.png" alt="Car Logo" class="spinning-logo" style="width: 40px; height: 40px;">
+                    </div>
+                    <h1 class="text-uppercase text-primary mb-1 ml-3">Royal Cars</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active"><i class="fas fa-house-user"></i> Home</a>
+                        <a href="about.html" class="nav-item nav-link"><i class="fas fa-users"></i> About</a>
+                        <a href="service.html" class="nav-item nav-link"><i class="fas fa-tools"></i> Service</a>
+                        <a href="register.html" class="nav-item nav-link"><i class="fas fa-user-plus"></i> Register</a>
+                        <a href="contact.html" class="nav-item nav-link"><i class="fas fa-address-book"></i> Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="container register-container">
+        <h2>Register as a Member</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-center text-white py-3">
+        <p>&copy; 2025 Royal Cars. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
